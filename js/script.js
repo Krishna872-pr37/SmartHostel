@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (role === "student") {
         window.location.href = "student/dashboard.html";
       } else {
-        alert("The Warden Dashboard will be added next.");
+        window.location.href = "admin/dashboard.html";
       }
     });
   }
