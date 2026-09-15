@@ -1,92 +1,50 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f7fb;
-  color: #1f2937;
-}
-
-header {
-  background-color: #1e40af;
+.login-button {
+  display: inline-block;
+  background-color: #2563eb;
   color: white;
-  text-align: center;
-  padding: 45px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 12px 22px;
+  margin-top: 15px;
 }
 
-header h1 {
-  margin: 0 0 10px;
-  font-size: 2.5rem;
+.login-button:hover {
+  background-color: #1d4ed8;
 }
 
-header p {
-  margin: 0;
-  font-size: 1.1rem;
-}
-
-main {
-  padding: 50px 20px;
-}
-
-.welcome-section {
-  max-width: 900px;
+.login-page {
+  max-width: 430px;
   margin: auto;
-  text-align: center;
-}
-
-.welcome-section h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.login-options {
-  display: flex;
-  gap: 25px;
-  justify-content: center;
-  margin-top: 35px;
-}
-
-.login-card {
-  width: 350px;
   padding: 30px;
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-.login-card h3 {
+.login-page h2 {
+  text-align: center;
   color: #1e40af;
-  font-size: 1.5rem;
 }
 
-.login-card p {
-  line-height: 1.6;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-button {
-  background-color: #2563eb;
-  color: white;
-  border: none;
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
   border-radius: 6px;
-  padding: 12px 22px;
   font-size: 1rem;
-  cursor: pointer;
 }
 
-button:hover {
-  background-color: #1d4ed8;
-}
-
-@media (max-width: 700px) {
-  .login-options {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .login-card {
-    width: 100%;
-    max-width: 350px;
-  }
+form button {
+  margin-top: 15px;
 }
