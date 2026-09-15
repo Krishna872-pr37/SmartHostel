@@ -186,3 +186,45 @@ td {
     grid-template-columns: 1fr;
   }
 }
+.fee-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.fee-card {
+  padding: 28px;
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.14);
+}
+
+.fee-card h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.fee-card p {
+  margin: 16px 0 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.total-fee {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+}
+
+.paid-fee {
+  background: linear-gradient(135deg, #15803d, #22c55e);
+}
+
+.remaining-fee {
+  background: linear-gradient(135deg, #b45309, #f59e0b);
+}
+
+@media (max-width: 800px) {
+  .fee-summary {
+    grid-template-columns: 1fr;
+  }
+}
