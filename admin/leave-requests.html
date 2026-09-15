@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave Requests | Smart Hostel</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2>Smart Hostel</h2>
+      <p>Warden Portal</p>
+
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#">Students</a>
+        <a href="#">Rooms</a>
+        <a href="leave-requests.html">Leave Requests</a>
+        <a href="#">Complaints</a>
+        <a href="#">Mess Management</a>
+        <a href="#">Fee Management</a>
+        <a href="#">Announcements</a>
+        <a href="../index.html">Logout</a>
+      </nav>
+    </aside>
+
+    <main class="dashboard-content">
+      <h1>Leave Requests</h1>
+      <p>Review and manage student leave applications.</p>
+
+      <section class="table-card">
+        <table>
+          <thead>
+            <tr>
+              <th>Student</th>
+              <th>Room</th>
+              <th>Dates</th>
+              <th>Reason</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Arun Kumar</td>
+              <td>A-204</td>
+              <td>20 Sep – 22 Sep</td>
+              <td>Family function</td>
+              <td><span class="status pending">Pending</span></td>
+              <td>
+                <button class="approve-button" type="button">Approve</button>
+                <button class="reject-button" type="button">Reject</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Meera S</td>
+              <td>B-112</td>
+              <td>25 Sep – 26 Sep</td>
+              <td>Medical appointment</td>
+              <td><span class="status pending">Pending</span></td>
+              <td>
+                <button class="approve-button" type="button">Approve</button>
+                <button class="reject-button" type="button">Reject</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
