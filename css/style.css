@@ -1,7 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  text-align: center;
   background-color: #f4f7fb;
   color: #1f2937;
 }
@@ -9,9 +12,81 @@ body {
 header {
   background-color: #1e40af;
   color: white;
-  padding: 40px 20px;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.1rem;
 }
 
 main {
   padding: 50px 20px;
+}
+
+.welcome-section {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.welcome-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.login-options {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.login-card {
+  width: 350px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.login-card h3 {
+  color: #1e40af;
+  font-size: 1.5rem;
+}
+
+.login-card p {
+  line-height: 1.6;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 22px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+@media (max-width: 700px) {
+  .login-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .login-card {
+    width: 100%;
+    max-width: 350px;
+  }
 }
