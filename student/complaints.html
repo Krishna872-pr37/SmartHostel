@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complaints | Smart Hostel</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2>Smart Hostel</h2>
+      <p>Student Portal</p>
+
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#">My Profile</a>
+        <a href="#">My Room</a>
+        <a href="#">Mess Menu</a>
+        <a href="leave.html">Leave / Outpass</a>
+        <a href="complaints.html">Complaints</a>
+        <a href="#">Fees</a>
+        <a href="#">Announcements</a>
+        <a href="../index.html">Logout</a>
+      </nav>
+    </aside>
+
+    <main class="dashboard-content">
+      <h1>Submit a Complaint</h1>
+      <p>Report a hostel maintenance or service issue.</p>
+
+      <section class="form-card">
+        <form id="complaintForm">
+          <label for="category">Category</label>
+          <select id="category" required>
+            <option value="">Select a category</option>
+            <option>Electrical</option>
+            <option>Plumbing</option>
+            <option>Cleaning</option>
+            <option>Furniture</option>
+            <option>Internet / Wi-Fi</option>
+            <option>Other</option>
+          </select>
+
+          <label for="roomNumber">Room Number</label>
+          <input type="text" id="roomNumber" placeholder="Example: A-204" required>
+
+          <label for="complaintDetails">Complaint Details</label>
+          <textarea id="complaintDetails" rows="5" placeholder="Describe the issue clearly" required></textarea>
+
+          <button type="submit">Submit Complaint</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
