@@ -139,3 +139,50 @@ td {
     grid-template-columns: 1fr;
   }
 }
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin-top: 30px;
+}
+
+.meal-card {
+  padding: 28px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s;
+}
+
+.meal-card:hover {
+  transform: translateY(-5px);
+}
+
+.meal-card h2 {
+  margin-top: 0;
+  color: #1e40af;
+}
+
+.meal-card p {
+  min-height: 50px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.meal-card span {
+  display: inline-block;
+  padding: 8px 12px;
+  color: #1e3a8a;
+  background: #dbeafe;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .meal-grid {
+    grid-template-columns: 1fr;
+  }
+}
