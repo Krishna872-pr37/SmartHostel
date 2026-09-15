@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("loginForm");
+  const leaveForm = document.getElementById("leaveForm");
 
   if (loginForm) {
     loginForm.addEventListener("submit", function (event) {
@@ -12,6 +13,15 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         window.location.href = "admin/dashboard.html";
       }
+    });
+  }
+
+  if (leaveForm) {
+    leaveForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      alert("Your leave request has been submitted successfully! Status: Pending.");
+      leaveForm.reset();
     });
   }
 });
