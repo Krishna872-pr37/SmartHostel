@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accounts | SmartHostel</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>SmartHostel</h1>
+      <p>Hostel Admin</p>
+    </div>
+    <a class="top-link" href="dashboard.html">Dashboard</a>
+  </header>
+
+  <div class="layout">
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="students.html">Students</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="attendance.html">Attendance</a>
+      <a class="active" href="accounts.html">Accounts</a>
+      <a href="complaints.html">Complaints</a>
+      <a href="announcements.html">Announcements</a>
+    </nav>
+
+    <main>
+      <h2>Create Student Account</h2>
+      <p>Only the admin can create student accounts.</p>
+
+      <p id="message" class="note" hidden></p>
+
+      <form class="form-card" onsubmit="submitAccount(event)">
+        <label>Student Name</label>
+        <input name="name" required placeholder="Full name">
+
+        <label>College Email</label>
+        <input name="email" type="email" required placeholder="student@college.edu">
+
+        <label>Student ID</label>
+        <input name="id" required placeholder="College ID">
+
+        <button type="submit">Create Demo Account</button>
+      </form>
+
+      <p class="note">
+        Demo only: a real system needs a secure backend to create
+        passwords and store accounts safely.
+      </p>
+    </main>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
